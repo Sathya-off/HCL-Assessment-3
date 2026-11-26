@@ -1,0 +1,5 @@
+SELECT department,
+       FORMAT(AVG(salary), 2) AS average_salary
+FROM employees
+GROUP BY department
+HAVING AVG(salary) > 60000;
