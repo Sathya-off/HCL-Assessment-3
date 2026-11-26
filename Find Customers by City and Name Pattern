@@ -1,0 +1,4 @@
+SELECT customer_id, customer_name, city
+FROM customers
+WHERE city IN ('Chennai', 'Coimbatore')
+AND customer_name LIKE '%a';
