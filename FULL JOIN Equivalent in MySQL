@@ -1,0 +1,18 @@
+SELECT c.customer_id,
+       c.customer_name,
+       o.order_id,
+       o.amount
+FROM customers c
+LEFT JOIN orders o
+ON c.customer_id = o.customer_id
+
+UNION ALL
+
+SELECT c.customer_id,
+       c.customer_name,
+       o.order_id,
+       o.amount
+FROM customers c
+RIGHT JOIN orders o
+ON c.customer_id = o.customer_id
+WHERE c.customer_id IS NULL;
