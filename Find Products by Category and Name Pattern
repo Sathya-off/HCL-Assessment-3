@@ -1,0 +1,4 @@
+SELECT product_name, category, price
+FROM products
+WHERE category IN ('Laptop', 'Mobile')
+AND product_name LIKE '%Pro%';
