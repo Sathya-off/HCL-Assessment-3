@@ -1,0 +1,6 @@
+SELECT product_id, product_name, category, price
+FROM products
+WHERE category IN ('Electronics', 'Accessories', 'Computer')
+AND price BETWEEN 2000 AND 50000
+AND (product_name LIKE 'Smart%'
+     OR product_name LIKE 'Pro%');
