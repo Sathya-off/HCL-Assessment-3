@@ -1,0 +1,3 @@
+UPDATE employees
+SET department = 'Customer Success'
+WHERE department = 'Support';
