@@ -1,0 +1,6 @@
+SELECT employee_name, department, experience_years, salary
+FROM employees
+WHERE department IN ('IT', 'Data Science', 'Engineering')
+AND experience_years BETWEEN 3 AND 8
+AND employee_name LIKE '%a%';
+
