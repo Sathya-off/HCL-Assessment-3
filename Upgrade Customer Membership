@@ -1,0 +1,4 @@
+UPDATE customers
+SET membership = 'Gold',
+    discount = 15.00
+WHERE total_spent >= 75000;
